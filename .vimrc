@@ -35,3 +35,10 @@ let g:airline#extensions#tabline#enabled = 1
 
 "----------------------- Ctrl-P ----------------------------------
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" russian keyboard support
+" ctrl+^ to switch language
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan

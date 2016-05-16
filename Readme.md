@@ -1,3 +1,5 @@
-This is my Vim configuration, i am still figuring it out.
+Vim configuration that i use
 
-I mostly use Ruby on Rails, so its configured for that.
+To install it, clone the repository and copy .vim directory and .vimrc into your user directory.
+
+Then, to install the plugins, run git submodule init && git submodule update
