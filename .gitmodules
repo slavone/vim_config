@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/vim-slim"]
 	path = .vim/bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim
+[submodule ".vim/bundle/vim-mkdir"]
+	path = .vim/bundle/vim-mkdir
+	url = https://github.com/pbrisbin/vim-mkdir
