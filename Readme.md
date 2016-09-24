@@ -1,5 +1,9 @@
-Vim configuration that i use
+### My vim config
 
-To install it, clone the repository and copy .vim directory and .vimrc into your user directory.
-
-Then, to install the plugins, run git submodule init && git submodule update
+Installation:
+```
+git clone https://github.com/slavone/vim_config
+cd vim_config
+git submodule install && sit submodule update
+cp -r .vim .vimrc %your_home_directory%
+```
