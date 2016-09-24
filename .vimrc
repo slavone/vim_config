@@ -1,4 +1,4 @@
-execute pathogen#infect() 
+execute pathogen#infect()
 
 syntax on
 set encoding=utf-8
@@ -6,7 +6,8 @@ set number "show line numbers
 set incsearch "search as you type
 "set hlsearch "highlight search results
 set ls=2 "always show status bar
-
+set hidden "proper hidden buffers
+set wildmenu "commands autocomplete
 "------------------------- Color scheme ----------------------------
 
 "let g:solarized_termcolors=256
@@ -31,8 +32,6 @@ inoremap jk <Esc>
 
 "----------------------- Vim-Airline ------------------------------
 let g:airline#extensions#tabline#enabled = 1
-
-
 "----------------------- Ctrl-P ----------------------------------
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_show_hidden = 1
@@ -46,3 +45,8 @@ highlight lCursor guifg=NONE guibg=Cyan
 
 " turns off ELP for easy netrw access
 let g:loaded_logipat = 1
+
+" silver searcher with ack.vim
+if executable('ag')
+  let g:ackprg = 'ag --nogroup --nocolor --column'
+endif
